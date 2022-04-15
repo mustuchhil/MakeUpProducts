@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BEAUTY SHOPPING</title>
+        <meta name="description" content="Best Beauty products">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script src="https://use.fontawesome.com/5e117df967.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/cart.css">
+    </head>
+    <body>
+        <!-- Header content -->
+        <header class="page-header">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="Beauty Hub">
+                </a>
+            </div>
+            <button type="button" class="nav-toggle" name="menu button">
+                <!-- <span class="material-icons">menu</span> -->
+                <i class="fa fa-bars fa-4x"></i>
+            </button>
+            
+            <!-- Navigation -->
+            <nav aria-label="Primary" class="navigation m-hide">
+                <ul class="menu">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Add to cart button -->
+            <div class="top-cart">
+                <!-- Additional links -->
+                <ul class="header-cart">
+                  <li><a href="#"><i class="fa far fa-heart fa-2x"></i></a></li>  
+                  <li><a href="./cart.html"><i class="fa fas fa-shopping-cart fa-2x" aria-label="Items in your cart"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="page-banner">
+                <h2>MY CART</h2>
+            </div>
+
+            <section class="cart-container">
+                <div class="cart-prods-section">
+                    <h1>PRODUCTS</h1>
+                    <div class="cart-prod-area">
+
+                    </div>
+                    <div class="btns-continue-update">
+                        <button onclick="window.location.href='./index.html';" class="btn">CONTINUE SHOPPING</button>
+                        <button class="btn">UPDATE CART</button>
+                    </div>
+                </div>
+                <div id="order-summary">
+
+                </div>
+            </section>
+        </main>
+        <!-- --------- FOOTER SECTION ----------- -->
+        <footer class="footer">
+            <h2 id="author-details">Tata Awah & Mustafa Chhil</h2>
+        </footer>
+        <!-- js scripts -->
+        <!-- <script src="./js/script.js" async defer></script> -->
+        <script type="module" src="./js/cart.js" async defer></script>
+    </body>
+</html>

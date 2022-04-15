@@ -1,0 +1,260 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+html {
+	box-sizing: border-box;
+	--global-color-primary: #1f1f1f; 
+	--global-color-secondary: #343435;   /* main colour */
+	--alt-color:#ae976f;    /* variant */
+	--prim-text-color: #ffffff;     /* for text or icons */
+	--alt-text-color: #b9b9b9;     /* for text or icons */
+	--secondary-alt: #99ccff;
+	--secondary-on: #131313;
+	--btn-color:#8d5849;
+	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+body {
+    display: flex;
+    flex-direction: column;
+	margin: 0px;
+	background-color: var(--global-color-primary);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/tiles-shapes-g6cd7d2b35_1920.jpg);
+	font-family: var(--font-family-monospace);
+	color: var(--prim-text-color);
+}
+.page-banner>h2{
+    font-size: xxx-large;
+}
+
+/* Preview each of these suggested resets before beginning your project styling */
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+ul, ol, dl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*
+li > ul, li > ol {
+	padding-left: 2.5em;
+} */
+
+input, button {
+	margin: 0;
+	font: inherit;
+}
+
+fieldset {
+margin-bottom: 1em;
+} 
+
+legend {
+	padding: 0;
+	border: none;
+} */
+
+
+/* These will make "User agent stylesheet" values (Chrome) available when needed, using classes */
+ul.ul {
+	list-style-type: disc;
+}
+ol.ol {
+	list-style-type: decimal;
+}
+ul.ul, ol.ol {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 2.5em;
+}
+fieldset.fieldset {
+	display: block;
+	margin-inline-start: 0.125em;
+	margin-inline-end: 0.125em;
+	padding-block-start: 0.35em;
+	padding-inline-start: 0.75em;
+	padding-inline-end: 0.75em;
+	padding-block-end: 0.625em;
+	min-inline-size: min-content;
+	border-width: 0.125em;
+	border-style: groove;
+	border-color: threedface;
+	border-image: initial;
+}
+legend.legend {
+	display: block;
+	padding-inline-start: 0.125em;
+	padding-inline-end: 0.125em;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+}
+a, button, a:hover {
+    color:var(--alt-color);
+    text-decoration: none;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+p{
+	font-family: var(--font-family-sans-serif);
+	color: var(--alt-text-color);
+    font-size: 1rem;
+}
+
+h2{
+	text-transform: capitalize;
+	/* font-size: 2rem; */
+	margin: .5em 0;
+}
+h4 {
+    font-size: 1.2rem;
+}
+i{
+    /* font-size: 1.5rem; */
+    margin-bottom: .5em;
+}
+
+/* ================== Hedaer and footer Style =================== */
+a:hover, .fa:hover{
+    color: var(--btn-color);
+}
+/* <============== Header styling ============> */
+/* =========== Header Banner ==================== */
+.page-banner{
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/cosmetic-g11783a481_1920.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    height: 8em;
+}
+.page-banner>h2{
+    place-self: center;
+    justify-self: center;
+}
+.logo{
+    width:11em;
+    justify-self: center
+}
+.m-hide{
+    display: none;
+}
+.page-header, .footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: beige;
+    padding: 0 3em 0 3em;
+    box-shadow:1px 15px 60px 15px #000000; 
+}
+.main-container{
+    flex: 1 0 auto;
+    margin:0em auto;
+    max-width: 100em;
+}
+.top-cart{
+    justify-content: center;
+    align-self: center; 
+}
+.nav-toggle{
+    background-color: beige;
+    border: 0px white;
+    align-self: center; 
+    justify-content: center;
+}
+.nav-toggle .fa{
+    margin: 0px auto;
+    /* align-self: center;  */
+}
+.header-cart li .fa{
+    margin: 0px auto;
+    /* align-self: center; */
+}
+.sticky {
+    position: fixed;
+    /* margin: 0px auto; */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/starry-sky-g2f92ae4d0_1920.jpg);
+    /* left: 0%; */
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-cart{
+    display: flex;
+    gap: 1.5em;
+}
+.btn{
+    padding: .8em;
+    font-weight: bolder;
+    color: black;
+    background-color: #C7928A;
+}
+.btn_price{
+    padding: .1em;
+    font-size: x-large;
+    background-color: #C7928A;
+}
+.btn_price:hover, .btn:hover, .add-to-cart-btn:hover{
+    background-color: beige;
+}
+.product{
+    padding: 1em;
+}
+.product>img{
+    width: 80em;
+    /* height: 20em; */
+}
+/* ====== Footer  ================================== */
+.footer{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8em;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/starry-sky-g2f92ae4d0_1920.jpg);
+    color: var(--alt-color);
+}
+#author-details{
+    font-size: xx-large;
+}
+
+  /* ======== start Media Queries ==================*/
+@media only screen and (min-width: 992px){
+
+
+}
+
+@media only screen and (min-width: 1316px){
+    /* <============== Header styling ============> */
+    .m-hide{
+        display: block;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .navigation{
+        justify-content: center;
+        align-self: center; 
+    }
+    .navigation ul{
+        display: flex;
+        justify-content:center;
+        font-size: 2rem;
+        align-self: center; 
+        gap: 4em;
+    }
+    .navigation ul li{
+        display:inline;
+    }
+}

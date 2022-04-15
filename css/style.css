@@ -1,0 +1,115 @@
+
+/* ==== Main container =========================== */
+.main-container{
+    /* min-width: 200em; */
+
+}
+#prods{
+    padding: 3em 1em;
+    display: grid;
+    /* justify-items: center; */
+    justify-content: space-evenly; 
+    row-gap: 3em;
+    /* background-color: brown; */
+    box-shadow:0px 15px 50px 10px #000000; 
+}
+.product{
+    display: grid;
+    background-color: #405055;
+}
+.prod-details{
+    /* grid-template-columns: repeat(2, 50%); */
+    /* justify-items: start; */
+    display: grid;
+    grid-template-areas: 
+    "desc desc desc" 
+    "pCat pCat rating"
+    "price price btnCart";
+    justify-content: space-between; 
+}
+.prodDesc{
+    grid-area: desc;
+}
+.cat-name{
+    /* grid-column: 1 /span 2; */
+    grid-area: pCat;
+}
+.prod-rating {
+    grid-area: rating;
+    justify-self: end;
+  }
+.prod-Price{
+    grid-area: price;
+}
+.add-to-cart-btn {
+    align-self: center;
+    grid-area: btnCart;
+    padding: .5em;
+    justify-content: center;
+    margin: 0px auto;
+    color: black;
+    font-weight: bolder;
+}
+.pages{
+    display: flex;
+    gap: 2em;
+    align-self: center;
+}
+.pagination{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+    justify-content: center;
+}
+.alert-appear{
+    /* display: none; */
+    margin: 0px auto;
+    display: grid;
+    background-color: #2bcc2b;
+    justify-content: space-evenly; 
+    width: 15em;
+    color: #000000;
+    position: fixed;
+    animation: hideAnimation ease 3s;
+}
+.ahide{
+    display: none;
+}
+  
+@keyframes hideAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+
+/* ======== start Media Queries ==================*/
+@media only screen and (min-width: 850px){
+
+    /* ====== main container ============================== */
+    #prods{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        /* justify-items: center; */
+        /* justify-content:space-between; */
+    }
+
+}
+
+@media only screen and (min-width: 1316px){
+
+    /* ====== main container ============================== */
+    #prods{
+        display: grid;
+        grid-template-columns: repeat(3, 29%);
+        /* justify-items: center; */
+        /* justify-content:space-between; */
+    }
+    .product{
+        /* width: 250px;
+        height: 250px; */
+    }
+}
+

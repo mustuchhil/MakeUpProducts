@@ -1,0 +1,100 @@
+#checkout-section{
+    display: grid;
+    grid-template-columns:1fr;
+}
+#checkout-prods-container{
+    display: none;
+}
+#checkout-payment-container{
+    /* border: .1em solid var(--prim-text-color); */
+    box-shadow:1px 5px 60px 10px #F5F5DC; 
+    background-color: var(--global-color-primary);
+}
+.checkout-pQ{
+    display: grid;
+}
+.prod{
+    border: .1em solid var(--prim-text-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+}
+.prod img:first-of-type{
+    width: 10em;
+}
+.prod>p:last-of-type{
+    align-self: center;
+    margin: 0px auto;
+    /* flex-grow: 4; */
+    /* justify-content: center; */
+}
+.prods-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.prod>img{
+    display: none;
+}
+ #finalP-div{
+     padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#finalP-div>h3{
+    font-size: 1.5em;
+    align-self: flex-end;
+}
+/* ======= ================== */
+
+
+/* ======== start Media Queries ==================*/
+@media only screen and (min-width: 971px){
+    #checkout-section{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        /* gap: 1em; */
+        background-color: blueviolet;
+    }
+    #checkout-prods-container, #checkout-payment-container{
+        padding: 2em;
+    }
+    #checkout-prods-container{
+        background-color: var(--global-color-secondary);
+        background: linear-gradient( rgba(207, 206, 206, 0.5), rgba(0, 0, 0, 0.698) ),url(../img/pexels-adrienne-andersen-2661256.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .prod{
+        border: .1em solid var(--prim-text-color);
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 2em;
+    }
+    .prod>img{
+        display: block;
+    }
+    #checkout-payment-container, #finalP-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #checkout-prods-container{
+        display: grid;
+    }
+    #btn-return-shop{
+        /* justify-content: center; */
+        display: flex;
+        gap:6em;
+        align-self: center;
+        margin: 0px auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 1604px){
+
+
+}
